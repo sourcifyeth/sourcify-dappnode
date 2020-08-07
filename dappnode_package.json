@@ -1,5 +1,5 @@
 {
-  "name": "sourcify.public.dappnode.eth",
+  "name": "sourcify-server.public.dappnode.eth",
   "version": "0.1.0",
   "description": "Sourcify is a decentralized automated contract verification service",
   "type": "service",
@@ -17,7 +17,7 @@
   ],
   "links": {
     "homepage": "https://github.com/ethereum/sourcify",
-    "api": "http://sourcify.dappnode:2000"
+    "api": "http://sourcify-server.public.dappnode"
   },
   "bugs": {
     "url": "https://github.com/ethereum/sourcify/issues"
