@@ -1,8 +1,11 @@
 version: '3.4'
 services:
-  sourcify-server.public.dappnode.eth:
+  sourcify-ui.public.dappnode.eth:
     build: ./build
-    image: 'sourcify-server.public.dappnode.eth:0.1.0'
+    image: 'sourcify-ui.public.dappnode.eth:0.1.0'
+    environment:
+      - 'SERVER_URL=http://sourcify-server.public.dappnode'
+      - 'REPOSITORY_URL=http://sourcify-repository.public.dappnode'
     ports:
-      - '2000:2000'
+      - '1234'
     restart: always

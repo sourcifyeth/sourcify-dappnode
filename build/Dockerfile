@@ -1,2 +1,1 @@
-FROM ethereum/source-verify:server-latest
-
+FROM ethereum/source-verify:ui-latest
