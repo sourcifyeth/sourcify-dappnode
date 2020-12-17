@@ -4,7 +4,11 @@
   "description": "Sourcify is a decentralized automated contract verification service",
   "mainService": "ui",
   "type": "service",
-  "backup": ["repository", "/data", "repository"],
+  "backup": [
+    {
+      "name":"repository", "path": "/data", "service": "repository"
+      }
+    ],
   "author": "Shard Labs <info@shardlabs.io>",
   "contributors": [
     "Jakov <jakov@shardlabs.io> (https://github.com/Jakic007)"
@@ -19,7 +23,8 @@
   ],
   "links": {
     "homepage": "https://github.com/ethereum/sourcify",
-    "api": "http://sourcify.public.dappnode"
+    "ui": "http://sourcify.public.dappnode:1234",
+    "api": "http://server.sourcify.public.dappnode"
   },
   "repository": {
     "type": "git",

@@ -14,8 +14,8 @@ services:
     ports:
       - "1234"
     environment:
-      - 'SERVER_URL=http://server.sourcify.public.dappnode'
-      - 'REPOSITORY_URL=http://repository.sourcify.public.dappnode'
+      - "SERVER_URL=http://server.sourcify.public.dappnode"
+      - "REPOSITORY_URL=http://repository.sourcify.public.dappnode"
     restart: always
   repository:
     build: ./repository
@@ -23,7 +23,9 @@ services:
     ports:
       - "80"
     volumes:
-      - "repository:/home/app/repository/"
+      - "repository:/data"
     restart: always
 volumes:
   repository: {}
+  h5ai:
+    driver: local
