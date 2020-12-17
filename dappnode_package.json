@@ -1,9 +1,11 @@
 {
-  "name": "sourcify-server.public.dappnode.eth",
+  "name": "sourcify.public.dappnode.eth",
   "version": "0.1.0",
   "description": "Sourcify is a decentralized automated contract verification service",
+  "mainService": "ui",
   "type": "service",
-  "author": "ethereum",
+  "backup": ["repository", "/data", "repository"],
+  "author": "Shard Labs <info@shardlabs.io>",
   "contributors": [
     "Jakov <jakov@shardlabs.io> (https://github.com/Jakic007)"
   ],
@@ -17,10 +19,14 @@
   ],
   "links": {
     "homepage": "https://github.com/ethereum/sourcify",
-    "api": "http://sourcify-server.public.dappnode"
+    "api": "http://sourcify.public.dappnode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethereum/sourcify"
   },
   "bugs": {
     "url": "https://github.com/ethereum/sourcify/issues"
   },
-  "license": "GLP-3.0"
+  "license": "MIT"
 }
